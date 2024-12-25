@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: transparent;
+    padding: 10px 20px;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+}
+
+.navbar .logo {
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo img {
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #007bff;
+    text-decoration: underline;
+}
+
+  #landing {
+    background-color: #0B1627;
+    /* background-size: cover; */
+    background-position: center;
+    height: 100vh;
+  }
+  #landing h1 {
+    text-align: center;
+    font-size: 60px;
+    color:white;
+    padding-top: 250px;
+  }
+  #landing p {
+    text-align: center;
+    font-size: 25px;
+    color:white;
+    padding-top: 20px;
+  }
+  button {
+    padding: 8px 40px;
+    background-color: rgb(137, 198, 236);
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-top: 20px;
+    font-size: 20px;
+    margin-left: 40%;
+    border-radius: 10px;
+  }
+  #landing input{
+    padding: 8px 40px;
+    background-color: rgb(236, 241, 244);
+    color: black;
+    border: 1px solid black;
+    cursor: pointer;
+    font-size: 20px;
+    border-radius: 10px;
+
+  }

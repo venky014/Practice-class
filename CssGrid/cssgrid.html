@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css Grid</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr); 
+            grid-template-rows: repeat(6, 100px); 
+            gap: 10px;
+            background-color: rgb(27, 53, 196);
+            padding: 10px;
+        }
+
+        .grid-container > div {
+            background-color: white;
+            color: rgb(27, 53, 196);
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid rgb(27, 53, 196);
+            text-align: center;
+            font-weight: bold;
+        }
+        .a {
+            grid-column: span 2;
+            grid-row: span 4;
+        }
+        .b {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        .c {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        .d {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        .e {
+            grid-column: span 2;
+            grid-row: span 3;
+        }
+        .f {
+            grid-column: span 2;
+            grid-row: span 4;
+        }
+        .g {
+            grid-column: span 2;
+            grid-row: span 2;
+        }
+        .h {
+            grid-column: span 4;
+            grid-row: span 1;
+        }
+        .i {
+            grid-column: span 6;
+            grid-row: span 1;
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS GRID</h1>
+    <div class="grid-container">
+        <div class="a">A</div>
+        <div class="b">B</div>
+        <div class="c">C</div>
+        <div class="d">D </div>
+        <div class="e">E</div>
+        <div class="f">F</div>
+        <div class="g">G</div>
+        <div class="h">H</div>
+        <div class="i">I</div>
+    </div>
+</body>
+</html>

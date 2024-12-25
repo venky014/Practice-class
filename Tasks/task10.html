@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Grid</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            gap: 20px;
+        }
+
+        .product-card {
+            background-color: #e6ffe6;
+            border: 1px solid #d1e7d1;
+            border-radius: 8px;
+            padding: 15px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 8px;
+        }
+
+        .product-name {
+            margin: 10px 0;
+            font-weight: bold;
+        }
+
+        .product-price {
+            color: green;
+            font-size: 1.2em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="product-grid">
+        <div class="product-card">
+            <img src="" alt="Product 1">
+            <div class="product-name">Product 1</div>
+            <div class="product-price">$10.99</div>
+        </div>
+        <div class="product-card">
+            <img src="" alt="Product 2">
+            <div class="product-name">Product 2</div>
+            <div class="product-price">$15.49</div>
+        </div>
+        <div class="product-card">
+            <img src="" alt="Product 3">
+            <div class="product-name">Product 3</div>
+            <div class="product-price">$8.99</div>
+        </div>
+        <div class="product-card">
+            <img src="" alt="Product 4">
+            <div class="product-name">Product 4</div>
+            <div class="product-price">$12.99</div>
+        </div>
+        <div class="product-card">
+            <img src="" alt="Product 5">
+            <div class="product-name">Product 5</div>
+            <div class="product-price">$9.99</div>
+        </div>
+        <div class="product-card">
+            <img src="" alt="Product 6">
+            <div class="product-name">Product 6</div>
+            <div class="product-price">$11.99</div>
+        </div>
+    </div>
+</body>
+</html>
