@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .gallery{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 10px;
+            justify-content: center;
+        }
+        .gallery img{
+            width: 150px;
+        }
+        .gallery img:hover{
+            opacity: 0.7;
+        }
+        @media(max-width:600px){
+            .gallery{
+                flex-direction: column;
+                align-items: center;
+
+            }
+            .gallery img{
+                width: 100%;
+                max-width: 300px;
+
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="gallery">
+        <img src="https://images.pexels.com/photos/110812/pexels-photo-110812.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+        <img src="https://images.pexels.com/photos/1133957/pexels-photo-1133957.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+        <img src="https://images.pexels.com/photos/37833/rainbow-lorikeet-parrots-australia-rainbow-37833.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+        <img src="https://images.pexels.com/photos/70069/pexels-photo-70069.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+        <img src="https://images.pexels.com/photos/63330/geese-water-birds-waterfowl-63330.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+        <img src="https://images.pexels.com/photos/2134180/pexels-photo-2134180.jpeg?auto=compress&cs=tinysrgb&w=600" alt="">
+
+    </div>
+</body>
+</html>

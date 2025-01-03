@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 400px;
+            height: 70px;
+            padding: 30px;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 100%;
+            animation-name: blink;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+        }
+        @keyframes blink{
+            0%,100%{
+                background: rgb(227, 162, 162);
+                color: white;
+            }
+            50%{
+                background: brown;
+                border-radius: 50%;
+                color: black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Hello World !</h3>
+    </div>
+</body>
+</html>

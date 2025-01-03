@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+    <style>
+        * {
+  box-sizing: border-box;
+}
+
+.box {
+    position: relative;
+  width: 300px;
+  height: 100px;
+  background: rgb(179, 152, 152);
+  color: white;
+  z-index: 3;
+}
+
+#two {
+    position: relative;
+  top: 20px;
+  left: 20px;
+  background: rgb(151, 190, 24);
+  
+}
+#four{
+    position: relative;
+    top: 20px;
+    left: 20px;
+    background: rgb(151, 190, 24);
+
+}
+    </style>
+</head>
+<body>
+    <div class="box" id="one"></div>
+    <div class="box" id="two"></div>
+    <div class="box" id="three"></div>
+    <div class="box" id="four"></div>
+</body>
+</html>

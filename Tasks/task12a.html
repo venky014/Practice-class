@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ball{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: lightcoral;
+            padding: 100px;
+            margin: 200px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: jump 1s infinite;
+        }
+        @keyframes jump{
+            0%{
+                transform: translateX(0);
+                background-color: aqua;
+            }
+            25%{
+                transform: translateY(25px);
+                background-color: rgb(191, 14, 144);
+
+            }
+            75%{
+                transform: translateY(-200px);
+                background-color: rgb(62, 60, 174);
+            }
+            50%{
+                transform: translate(-200px);
+                background-color: rgb(6, 239, 37);
+            }
+            100%{
+                transform: translateX(0);
+                background-color: rgb(120, 4, 4);
+            }
+
+        }
+    </style>
+</head>
+<body>
+    <div class="ball">Jump</div>
+   
+</body>
+</html>

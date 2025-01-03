@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Card Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            text-align: center;
+            max-width: 300px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        .card h3 {
+            margin: 15px 0 10px;
+            font-size: 1.5rem;
+            color: #333;
+        }
+
+        .card p {
+            font-size: 1rem;
+            color: #555;
+            padding: 0 10px 15px;
+        }
+
+        @media (max-width: 1000px) {
+            .container{
+                justify-content: flex-start;
+            }
+            .card {
+                 width: 45%; 
+            }
+        }
+
+        @media (max-width: 500px) {
+            .card {
+                width: 100%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <img src="https://images.pexels.com/photos/3764984/pexels-photo-3764984.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card1">
+            <h3>Rolls Royce</h3>
+            <p>"Luxury, elegance, craftsmanship, innovation, prestige, exclusivity, performance, opulence, heritage, refinement."</p>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/3729464/pexels-photo-3729464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card2">
+            <h3>Benz</h3>
+            <p>"Luxury, performance, innovation, elegance, prestige, reliability, technology, design, sophistication, comfort."</p>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/225841/pexels-photo-225841.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Card3">
+            <h3>Range Rover</h3>
+            <p>"Luxury, capability, adventure, durability, elegance, versatility, innovation, prestige, off-road, refinement."</p>
+        </div>
+        <div class="card">
+            <img src="https://images.pexels.com/photos/170811/pexels-photo-170811.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Card4">
+            <h3>BMW</h3>
+            <p>"Performance, luxury, innovation, elegance, precision, technology, design, prestige, sophistication, dynamism."</p>
+        </div>
+    </div>
+</body>
+</html>
